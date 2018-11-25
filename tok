@@ -1,0 +1,14 @@
+#!/bin/bash
+
+case "$1" in
+    dra) arg="pull" ;;
+    tryck) arg="push" ;;
+    verkställ) arg="commit" ;;
+    *) arg=$1 ;;
+esac
+
+case "$#" in
+	0) git ;;
+	1) git $arg ;;
+	*) git $arg "${@:2}" ;; 
+esac
