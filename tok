@@ -4,6 +4,9 @@ case "$1" in
     dra) arg="pull" ;;
     tryck) arg="push" ;;
     verkställ) arg="commit" ;;
+    klona) arg="clone" ;;
+    läge) arg="status" ;;
+    addera) arg="add" ;;
     *) arg=$1 ;;
 esac
 
